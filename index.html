@@ -1,0 +1,47 @@
+<!--
+Copyright 2005, Pascal Pfiffner.
+
+This Widget is Freeware and will always be.
+-->
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="./style.css" type="text/css"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style type="text/css" title="AppleStyle">
+     @import "style.css";
+</style>
+<script type="text/javascript" src="./scripts.js" charset="utf-8" />
+<script type="text/javascript" src="file:///System/Library/WidgetResources/button/genericButton.js" charset="utf-8" />
+</head>
+
+<body onload="setup()">
+<div id="front" onmousemove="mousemove(event)" onmouseout="mouseexit(event)">
+	<img id="the_image" src="./Default.png" alt="model missing" onclick="stopSlideshow(); showModel(true); startSlideshow();" />
+	<img id="the_alt_image" src="./Default.png" alt="model missing" onclick="stopSlideshow(); showModel(true); startSlideshow();" />
+	
+	<div id="flip" class="flip" onclick="exitflip(event); showPrefs();" onmouseover="enterflip(event);" onmouseout="exitflip(event);">
+		<img id="flippi" src="/System/Library/WidgetResources/ibutton/white_i.png" alt="info" />
+	</div>
+</div>
+
+<div id="back">
+	<div id="info">
+		<span id="infospan">v ??</span><br />
+		<a id="infolink" href="javascript:if(window.widget) widget.openURL('http://www.widgetschmie.de/widgets/xWing');" title="visit developers website">visit website</a>
+	</div>
+	<form name="pref_form" action="" method="get"><br />
+	<select id="mode" name="mode">
+	</select><br />
+	<select id="selector" name="selector">
+	</select><br />
+	<div id="activationdiv"><input type="checkbox" name="activation" value="sure" />change on Show</div>
+	<div id="randomdiv"><input type="checkbox" name="random" value="sure" />random</div>
+	
+	<div id="done" class="done"></div>
+	</form>
+</div>
+</body>
+</html>

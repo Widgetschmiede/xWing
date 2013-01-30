@@ -1,0 +1,32 @@
+/*  
+Copyright 2005, Pascal Pfiffner.
+*/
+
+
+body { margin:0; font:10px Arial; color:#FFF; }
+a { color:#6AE; text-decoration:none; }
+a:hover { text-decoration:underline; }
+select { font-size:10px; }
+input { font-size:10px; }
+
+/* front */
+#front { position:relative; }
+#the_image { display:block; width:175px; height:150px; border:none; position:absolute; top:0px; left:0px; }
+#the_alt_image { display:none; width:175px; height:150px; border:none; position:absolute; top:0px; left:0px; }
+
+#flip { opacity:0; background:url(/System/Library/WidgetResources/ibutton/black_rollie.png) no-repeat top left; z-index:8000; cursor:pointer; }
+#fliprollie { display:none; opacity:0.25; background:url(/System/Library/WidgetResources/ibutton/white_rollie.png) no-repeat top left; z-index:7999; }
+.flip { position:absolute; top:68px; left:81px; width:13px; height:13px; }
+
+/* backside */
+#back { position:relative; width:175px; height:150px; margin:0px; padding:20px 0px 0px 10px; display:none; background:url(./Backside.png) top center no-repeat; text-align:center; }
+
+#mode { position:absolute; top:50px; right:36px; width:86px; }
+#selector { position:absolute; top:66px; right:30px; width:116px; }
+#activationdiv { position:absolute; top:80px; right:36px; display:inline-block; }
+#randomdiv { position:absolute; top:93px; right:48px; display:inline-block; }
+
+.done { cursor:pointer; position:absolute; top:108px; left:76px; }
+
+#info { font:bold 10px; }
+#infolink:hover { text-shadow:#FFF 0px 0px 2px; }
